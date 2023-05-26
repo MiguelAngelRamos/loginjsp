@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,41 +9,12 @@
 	<title>Welcome</title>
 </head>
 <body>
-	<div class="container">
-		<!-- Codigo del Formulario Login -->
-		 <div class="row mt-5">
-		    <div class="col-4 offset-4">
-		      <form action="Auth" method="post" >
-		        <div class="mb-3">
-		          <label for="exampleInputEmail1" class="form-label">Usuario</label>
-		          <input
-		            type="text"
-		            class="form-control"
-		            id="exampleInputEmail1"
-		        	name="usuario"
-		        	required
-		          />
-		        </div>
-		
-		        <div class="mb-3">
-		          <label for="exampleInputPassword1" class="form-label">Ingrese su contraseña</label>
-		          <input
-		            type="password"
-		            class="form-control"
-		            id="exampleInputPassword1"
-		            name="password"
-		            required
-		          />
-		    
-		        </div>
-		        <div class="d-grid gap-2">
-		          <button type="submit" class="btn btn-success">Acceder</button>
-		        </div>
-		      </form>
-		
-		    </div>
-		  </div>
-		<!-- Fin Codigo del Formulario Login -->
+    <!-- Navbar -->
+    <jsp:include page="navbar.jsp"/>
+    <!-- End Navbar -->
+	<div class="container mt-5">
+		<h1> Bienvenido(a) ${sessionScope.usuario}</h1>
+		<a href="index.jsp">Volver</a>
 	</div>
 </body>
 </html>
