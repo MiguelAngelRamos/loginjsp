@@ -46,11 +46,11 @@ public class Auth extends HttpServlet {
 	  if(usuario.equals("admin") && password.equals("admin")) {
 	    HttpSession session = request.getSession();
 	    
-	    session.setAttribute("usuario", session);
+	    session.setAttribute("usuario", usuario); // le acabo de añadir un atributo adicional a la session que es el nombre usuario
 	    requestDispatcher = request.getRequestDispatcher("welcome.jsp");
 	    
 	  } else {
-	    
+	    requestDispatcher = request.getRequestDispatcher("error.jsp");
 	  }
 	  
 	  requestDispatcher.forward(request, response);

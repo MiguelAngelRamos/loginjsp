@@ -31,8 +31,8 @@
       </ul>
       
      <c:if test="${not empty sessionScope.usuario}">
-     	<p class="mx-3"> Bienvenido(a) <span class="fw-bold text-capitalize"> ${sessionScope.usuario}</span></p>
-     	<form action="" method="">
+     	<p class="mx-3 my-2"> Bienvenido(a) <span class="fw-bold text-capitalize"> ${sessionScope.usuario}</span></p>
+     	<form action="Logout" method="post">
      		<button class="btn btn-outline-danger" type="submit"> Cerrar Session</button>
      	</form>
      </c:if>

@@ -10,7 +10,8 @@
 <body>
 	<div class="container">
 		<h1 class="text-center">Inicie Sesión</h1>
-		<!-- Codigo del Formulario Login -->
+	
+   	<!-- Codigo del Formulario Login -->
 		 <div class="row mt-5">
 		    <div class="col-4 offset-4">
 		      <form action="Auth" method="post" >
