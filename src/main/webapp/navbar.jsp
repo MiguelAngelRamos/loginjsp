@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page session="true" %>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
